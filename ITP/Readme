@@ -1,0 +1,33 @@
+# Treatment Lot Number Assignment
+
+This script is designed to assign lot numbers to treatments in a patient dataset based on specific rules. It processes a CSV file containing patient data and outputs a modified version of the dataset with assigned lot numbers.
+
+## Prerequisites
+
+- Python 3.x
+- pandas library
+
+## Installation
+
+1. Clone the repository or download the script file `lot_assignment.py`.
+2. Install the required dependencies by running the following command:
+
+
+## Usage
+
+1. Place the patient data CSV file in the same directory as the script file (`lot_assignment.py`).
+2. Open a command prompt or terminal and navigate to the directory containing the script file.
+3. Run the script using the following command:
+4. The script will process the patient data and generate a file named `lotfile_all.csv` containing the modified dataset with assigned lot numbers.
+
+## Configuration
+
+The script contains a few configurable parameters that you can modify according to your specific requirements. Open the `lot_assignment.py` file in a text editor and locate the following section:
+
+```python
+# Configuration
+pat_id = "hvid"     # Column name for patient ID
+lot_col = "new_lot"     # Column name for lot number
+RT = "RT"       # Rescue Therapy identifier
+TPO = ["TPO", "TPO + PS", "TPO + romiplostim"]    # TPO-related treatments
+rituximab = "rituximab"     # Rituximab treatment identifier
